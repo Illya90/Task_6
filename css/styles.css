@@ -1,0 +1,68 @@
+.after::after{ 
+    content: "Ω";
+    color: #333;  
+    background-color: rgb(243, 8, 204);
+}
+
+p::before{
+    content: "Ω";            
+}
+
+p::selection{
+    color: rgb(223, 24, 24);
+    background-color: blue;
+}
+
+b:first-child{
+    color: blueviolet;
+}
+
+input:invalid {
+    background: rgb(235, 14, 14);
+}
+
+input:valid{
+    background: cyan;
+}
+
+.none {
+    pointer-events: none;
+}
+
+p:nth-child(2n){
+    background: lime;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF; 
+    transition: width 2s, height 2s, background-color 2s;
+}
+
+.box:hover{
+    background-color: #f70707;
+    width: 200px;
+    height: 200px;
+}
+
+p{
+    text-indent: 1.5em;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+    word-break: break-word;
+}
+
+.not-visible{
+    visibility: hidden;
+}
+
+div{
+    width: 600px;
+}
+
+.img {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
